@@ -99,106 +99,90 @@ proxy-groups:
       - cl
       - ad
 rule-providers:
-  # 远程规则集
-
   Adblock:
     type: http
     behavior: domain
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite_Domain.yaml"
     path: ./ruleset/AdDomain.yaml
     interval: 86400
-        
   Apple:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml"
     path: ./ruleset/Apple.yaml
     interval: 86400
-
   Google:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml"
     path: ./ruleset/Google.yaml
     interval: 86400
-    
   Microsoft:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml"
     path: ./ruleset/Microsoft.yaml
     interval: 86400
-
   WeChat:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml"
     path: ./ruleset/WeChat.yaml
     interval: 86400
-
   Telegram:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml"
     path: ./ruleset/Telegram.yaml
     interval: 86400
-
   OpenAI:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml"
     path: ./ruleset/OpenAI.yaml
     interval: 86400
-    
   Twitter: 
     type: http
     behavior: classical
     url: https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml
     path: ./ruleset/Twitter.yaml
     interval: 86400
-
   YouTube:
     type: http
     behavior: classical
     url: https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
     path: ./ruleset/YouTube.yaml
     interval: 86400
-
   TikTok: 
     type: http
     behavior: classical
     url: https://raw.githubusercontents.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
     path: ./ruleset/TikTok.yaml
     interval: 86400
-
-  Streaming: # 国际媒体
+  Streaming: 
     type: http
     behavior: classical
     url: https://raw.githubusercontents.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyMedia.yaml
     path: ./ruleset/Streaming.yaml
     interval: 86400
-    
   China:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China.yaml"
     path: ./ruleset/China.yaml
     interval: 86400
-
   Global:
     type: http
     behavior: domain
     url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt"
     path: ./ruleset/Global.yaml
     interval: 86400
-
-  Lan: # 局域网
+  Lan: 
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml"
     path: ./ruleset/lan.yaml
     interval: 86400
-    
 rules:
   - ip-asn, 13335, proxy
   - ip-asn, 15169, proxy
@@ -240,5 +224,4 @@ rules:
   - DOMAIN-SUFFIX,cn,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,◎
-
 
