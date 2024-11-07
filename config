@@ -200,18 +200,32 @@ rule-providers:
     interval: 86400
     
 rules:
- - RULE-SET,applications,DIRECT
-  - DOMAIN,clash.razord.top,DIRECT
-  - DOMAIN,yacd.haishan.me,DIRECT
-  - RULE-SET,private,DIRECT
-  - RULE-SET,reject,REJECT
-  - RULE-SET,icloud,DIRECT
-  - RULE-SET,apple,DIRECT
-  - RULE-SET,google,PROXY
-  - RULE-SET,proxy,PROXY
-  - RULE-SET,direct,DIRECT
-  - RULE-SET,lancidr,DIRECT
-  - RULE-SET,cncidr,DIRECT
-  - GEOIP,LAN,DIRECT
-  - GEOIP,CN,DIRECT
-  - MATCH,PROXY
+  - RULE-SET,custom_direct,DIRECT
+  - RULE-SET,custom_proxy,节点选择
+  - RULE-SET,httpdns,REJECT
+  - RULE-SET,custom_reject,REJECT
+  - RULE-SET,ADs_merged,REJECT
+  - RULE-SET,apple,Apple
+  - RULE-SET,biliintl,节点选择
+  - RULE-SET,tracker,Tracker
+  - RULE-SET,ai,AI
+  - RULE-SET,youtube,YouTube
+  - RULE-SET,google_site,Google
+  - RULE-SET,google_ip,Google
+  - RULE-SET,netflix_site,流媒体
+  - RULE-SET,netflix_ip,流媒体
+  - RULE-SET,primevideo,流媒体
+  - RULE-SET,disney,流媒体
+  - RULE-SET,category-porn,Porns
+  - RULE-SET,bilibili,Bilibili
+  - RULE-SET,tg_site,Telegram
+  - RULE-SET,tg_ip,Telegram
+  - RULE-SET,github,Github
+  - RULE-SET,microsoft,Microsoft
+  - RULE-SET,bahamut,巴哈姆特
+  - RULE-SET,emby,Emby
+  - RULE-SET,cn_site,DIRECT
+  - RULE-SET,cn_ip,DIRECT
+  - MATCH,MATCH
+
+
