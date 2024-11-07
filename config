@@ -200,7 +200,6 @@ rule-providers:
     interval: 86400
     
 rules:
-  - RULE-SET,custom_direct,DIRECT
   - RULE-SET,custom_proxy,节点选择
   - RULE-SET,httpdns,REJECT
   - RULE-SET,ADs_merged,REJECT
