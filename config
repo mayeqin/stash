@@ -203,7 +203,6 @@ rules:
   - RULE-SET,custom_direct,DIRECT
   - RULE-SET,custom_proxy,节点选择
   - RULE-SET,httpdns,REJECT
-  - RULE-SET,custom_reject,REJECT
   - RULE-SET,ADs_merged,REJECT
   - RULE-SET,apple,Apple
   - RULE-SET,biliintl,节点选择
