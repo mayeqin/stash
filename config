@@ -101,7 +101,6 @@ proxy-groups:
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
-  - RULE-SET,apple,DIRECT
   - RULE-SET,google,PROXY
   - RULE-SET,direct,DIRECT
   - RULE-SET,lancidr,DIRECT
