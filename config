@@ -99,7 +99,19 @@ proxy-groups:
       - cl
       - ad
 rules:
-  - SCRIPT,quic,REJECT
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - RULE-SET,applications,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,reject,REJECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,google,PROXY
+  - RULE-SET,proxy,PROXY
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,cncidr,DIRECT
+  - RULE-SET,telegramcidr,PROXY
   - RULE-SET,category-ai-chat-!cn,OpenAI
   - RULE-SET,telegram,Telegram
   - RULE-SET,biliintl,哔哩东南亚
@@ -118,7 +130,10 @@ rules:
   - RULE-SET,microsoft,Microsoft
   - GEOIP,LAN,直连,no-resolve
   - GEOIP,CN,国内网站,no-resolve
-  - MATCH,其他外网
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - SCRIPT,quic,REJECT
+  - MATCH,PROXY
 rule-providers:
   category-ai-chat-!cn:
     type: http
