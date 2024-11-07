@@ -200,21 +200,19 @@ rule-providers:
     interval: 86400
     
 rules:
-  - RULE-SET,telegram,Telegram
-  - RULE-SET,biliintl,哔哩东南亚
-  - RULE-SET,bahamut,巴哈姆特
-  - RULE-SET,youtube,YouTube
-  - RULE-SET,netflix,NETFLIX
-  - RULE-SET,spotify,Spotify
-  - RULE-SET,disney,Disney+
-  - RULE-SET,tiktok,TikTok
-  - RULE-SET,steam@cn,国内网站
-  - RULE-SET,steam,Steam
-  - RULE-SET,pixiv,其他外网
-  - RULE-SET,google-cn,Google
-  - RULE-SET,apple-cn,Apple
-  - RULE-SET,microsoft@cn,国内网站
-  - RULE-SET,microsoft,Microsoft
-  - GEOIP,LAN,直连,no-resolve
-  - GEOIP,CN,国内网站,no-resolve
-  - MATCH,其他外网
+ - RULE-SET,applications,DIRECT
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,reject,REJECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,google,PROXY
+  - RULE-SET,proxy,PROXY
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,cncidr,DIRECT
+  - RULE-SET,telegramcidr,PROXY
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,PROXY
