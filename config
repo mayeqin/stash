@@ -13,10 +13,10 @@ dns:
 proxies:
   - {"name":"od","type":"vless","server":"158.178.236.179","port":27668,"uuid":"9c15bd16-5413-44a9-e37f-33cd304e98ca","tls":false,"network":"ws","ws-opts":{"path":"/joijijo"}}
   - {"name":"ol","type":"vless","server":"168.138.165.147","port":45500,"uuid":"a450063c-3cfc-4bb0-cd58-e88ff161b873","tls":false,"network":"ws","ws-opts":{"path":"/gfgfdf"}}
- proxy-groups:
+proxy-groups:
   - name: 🚀 节点选择
     type: select
- proxies:
+proxies:
   - ♻️ 自动选择
   - DIRECT
       - od
