@@ -5,73 +5,59 @@ external-controller: 0.0.0.0:9090
 dns:
   default-nameserver:
     - 223.5.5.5
-    - 119.28.28.28
+    - 119.29.29.29
     - system
   nameserver:
     - https://1.12.12.12/dns-query
     - https://223.5.5.5/dns-query
 proxies:
-  - {"name":"od-3x","type":"vless","server":"158.178.236.179","port":27668,"uuid":"9c15bd16-5413-44a9-e37f-33cd304e98ca","tls":false,"network":"ws","ws-opts":{"path":"/joijijo"}}
-  - {"name":"ol-3x","type":"vless","server":"168.138.165.147","port":45500,"uuid":"a450063c-3cfc-4bb0-cd58-e88ff161b873","tls":false,"network":"ws","ws-opts":{"path":"/gfgfdf"}}
-  - {"name":"cl-3x","type":"vless","server":"213.35.105.12","port":41819,"uuid":"e5bcd38d-6c2f-4565-cfa9-b8137a98323b","tls":false,"network":"ws","ws-opts":{"path":"/xvfgf"}}
-  - {"name":"ad-3x","type":"vless","server":"213.35.115.196","port":17964,"uuid":"3477b978-155c-4296-cfbc-c2fce9c9f0e3","tls":false,"network":"ws","ws-opts":{"path":"/fjggui"}}
-proxy-groups:
+  - {"name":"od","type":"vless","server":"158.178.236.179","port":27668,"uuid":"9c15bd16-5413-44a9-e37f-33cd304e98ca","tls":false,"network":"ws","ws-opts":{"path":"/joijijo"}}
+  - {"name":"ol","type":"vless","server":"168.138.165.147","port":45500,"uuid":"a450063c-3cfc-4bb0-cd58-e88ff161b873","tls":false,"network":"ws","ws-opts":{"path":"/gfgfdf"}}
+ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - od-3x
-      - ol-3x
-      - cl-3x
-      - ad-3x
+      - od
+      - ol
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-       - od-3x
-       - ol-3x
-       - cl-3x
-       - ad-3x
+       - od
+       - ol
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - od-3x
-      - ol-3x
-      - cl-3x
-      - ad-3x
+      - od
+      - ol
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - od-3x
-      - ol-3x
-      - cl-3x
-      - ad-3x
+      - od
+      - ol
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - od-3x
-      - ol-3x
-      - cl-3x
-      - ad-3x
+      - od
+      - ol
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - od-3x
-      - ol-3x
-      - cl-3x
-      - ad-3x
+      - od
+      - ol
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -94,11 +80,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - od-3x
-      - ol-3x
-      - cl-3x
-      - ad-3x
-rule-providers:
+      - od
+      - ol
+  rule-providers:
   Adblock:
     type: http
     behavior: domain
@@ -224,4 +208,3 @@ rules:
   - DOMAIN-SUFFIX,cn,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,◎
-
