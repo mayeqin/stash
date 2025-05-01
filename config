@@ -16,9 +16,9 @@ proxies:
 proxy-groups:
   - name: 🚀 节点选择
     type: select
-proxies:
-  - ♻️ 自动选择
-  - DIRECT
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
       - od
       - ol
   - name: ♻️ 自动选择
