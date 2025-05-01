@@ -27,8 +27,8 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - od
-      - ol
+       - od
+       - ol
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -82,7 +82,7 @@ proxy-groups:
       - ♻️ 自动选择
       - od
       - ol
-  rule-providers:
+rule-providers:
   Adblock:
     type: http
     behavior: domain
