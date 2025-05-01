@@ -27,8 +27,8 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-       - od
-       - ol
+      - od
+      - ol
   - name: 🌍 国外媒体
     type: select
     proxies:
