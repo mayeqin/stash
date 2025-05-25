@@ -12,7 +12,7 @@ dns:
     - https://223.5.5.5/dns-query
 proxies:
   - {"name":"od","type":"vless","server":"146.235.18.231","port":27668,"uuid":"9c15bd16-5413-44a9-e37f-33cd304e98ca","tls":false,"network":"ws","ws-opts":{"path":"/joijijo"}}
-  - {"name":"ol","type":"vless","server":"213.35.103.80","port":45500,"uuid":"a450063c-3cfc-4bb0-cd58-e88ff161b873","tls":false,"network":"ws","ws-opts":{"path":"/gfgfdf"}}
+  - {"name":"or","type":"vless","server":"138.2.109.175","port":24616,"uuid":"9e8584b6-cf20-4725-945e-64d6a82a0441","tls":false,"network":"ws","ws-opts":{"path":"/hggfo"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -20,7 +20,7 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - od
-      - ol
+      - or
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -28,7 +28,7 @@ proxy-groups:
     tolerance: 50
     proxies:
        - od
-       - ol
+       - or
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -36,28 +36,28 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - od
-      - ol
+      - or
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - od
-      - ol
+      - or
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - od
-      - ol
+      - or
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - od
-      - ol
+      - or
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -81,7 +81,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - od
-      - ol
+      - or
 rule-providers:
   Adblock:
     type: http
