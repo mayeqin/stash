@@ -38,7 +38,7 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-     - zgo
+      - zgo
       - od
       - or
   - name: 📲 电报信息
@@ -46,7 +46,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-     - zgo
+      - zgo
       - od
       - or
   - name: Ⓜ️ 微软服务
@@ -54,7 +54,7 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-     - zgo
+      - zgo
       - od
       - or
   - name: 🍎 苹果服务
@@ -62,7 +62,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-     - zgo
+      - zgo
       - od
       - or
   - name: 🎯 全球直连
@@ -87,7 +87,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-     - zgo
+      - zgo
       - od
       - or
 rule-providers:
