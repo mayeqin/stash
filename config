@@ -11,9 +11,9 @@ dns:
     - https://1.12.12.12/dns-query
     - https://223.5.5.5/dns-query
 proxies:
-  - {"name":"zgo","type":"vless","server":"38.49.55.100","port":46915,"uuid":"a682b72e-b5df-48b9-bada-b43e5a39334f","tls":false,"network":"ws","ws-opts":{"path":"/gfdg"}}
-  - {"name":"od","type":"vless","server":"146.235.18.231","port":27668,"uuid":"9c15bd16-5413-44a9-e37f-33cd304e98ca","tls":false,"network":"ws","ws-opts":{"path":"/joijijo"}}
-  - {"name":"or","type":"vless","server":"146.235.19.62","port":24616,"uuid":"9e8584b6-cf20-4725-945e-64d6a82a0441","tls":false,"network":"ws","ws-opts":{"path":"/hggfo"}}
+  - {"name":"zgo","type":"vless","server":"38.49.55.100","port":26354,"uuid":"1922e0c2-9641-427b-9dd4-1f104b4946e6","tls":false,"network":"tcp"}
+  - {"name":"hk","type":"vless","server":"146.235.18.231","port":54714,"uuid":"dad093cc-602c-423d-a56f-a421a3407f3b","tls":false,"network":"tcp"}
+  - {"name":"a_1","type":"vless","server":"146.235.19.62","port":32151,"uuid":"7e41df33-bb33-43bf-be69-afc88c718b25","tls":false,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
