@@ -12,8 +12,9 @@ dns:
     - https://223.5.5.5/dns-query
 proxies:
   - {"name":"zgo","type":"vless","server":"38.49.55.100","port":26354,"uuid":"1922e0c2-9641-427b-9dd4-1f104b4946e6","tls":false,"network":"tcp"}
-  - {"name":"hk","type":"vless","server":"146.235.18.231","port":54714,"uuid":"dad093cc-602c-423d-a56f-a421a3407f3b","tls":false,"network":"tcp"}
-  - {"name":"a_1","type":"vless","server":"146.235.19.62","port":32151,"uuid":"7e41df33-bb33-43bf-be69-afc88c718b25","tls":false,"network":"tcp"}
+  - {"name":"hk","type":"vless","server":"163.53.246.202","port":54714,"uuid":"dad093cc-602c-423d-a56f-a421a3407f3b","tls":false,"network":"tcp"}
+  - {"name":"a_1","type":"vless","server":"146.235.18.231","port":32151,"uuid":"7e41df33-bb33-43bf-be69-afc88c718b25","tls":false,"network":"tcp"}
+  - {"name":"b_1","type":"vless","server":"146.235.19.252","port":46094,"uuid":"aa97b72c-60fb-441f-bea7-86c9122f9cd4","tls":false,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -21,8 +22,9 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - zgo
-      - od
-      - or
+      - hk
+      - a_1
+      - b_1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -30,8 +32,9 @@ proxy-groups:
     tolerance: 50
     proxies:
        - zgo
-       - od
-       - or
+       - hk
+       - a_1
+       - b_1
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -39,32 +42,36 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - zgo
-      - od
-      - or
+      - hk
+      - a_1
+      - b_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - zgo
-      - od
-      - or
+      - hk
+      - a_1
+      - b_1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - zgo
-      - od
-      - or
+      - hk
+      - a_1
+      - b_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - zgo
-      - od
-      - or
+      - hk
+      - a_1
+      - b_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -88,8 +95,9 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - zgo
-      - od
-      - or
+      - hk
+      - a_1
+      - b_1
 rule-providers:
   Adblock:
     type: http
