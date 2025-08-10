@@ -11,7 +11,7 @@ dns:
     - https://1.12.12.12/dns-query
     - https://223.5.5.5/dns-query
 proxies:
-  - {"name":zgo,"type":vless,"server":38.49.55.100,"port":26354,"uuid":1922e0c2-9641-427b-9dd4-1f104b4946e6,”public-key”:e1Z8me9hPTVxmYajYolVV4Ioith2dCBVLCuskw5_ZDU,”short-id":d05438af1b9706,402927cfed4fc777,cb2d0ad5,952540,6c61,0db4b4f32012,c7,d90c1f63a9,”client-fingerprint”:chrome,"network":tcp}
+  - {"name":zgo,"type":vless,"server":38.49.55.100,"port":26354,"uuid":1922e0c2-9641-427b-9dd4-1f104b4946e6,”public-key”:e1Z8me9hPTVxmYajYolVV4Ioith2dCBVLCuskw5_ZDU,”short-id":d05438af1b9706,402927cfed4fc777,cb2d0ad5,952540,6c61,0db4b4f32012,c7,d90c1f63a9,"tls":true,”client-fingerprint”:chrome,"network":tcp}
   - {"name":hk,"type":vless,"server":163.53.246.202,"port":54714,"uuid":dad093cc-602c-423d-a56f-a421a3407f3b,"network":tcp}
   - {"name":"a_1","type":"vless","server":"146.235.18.231","port":32151,"uuid":"7e41df33-bb33-43bf-be69-afc88c718b25","tls":false,"network":"tcp"}
   - {"name":"b_1","type":"vless","server":"146.235.19.252","port":46094,"uuid":"aa97b72c-60fb-441f-bea7-86c9122f9cd4","tls":false,"network":"tcp"}
