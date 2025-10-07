@@ -14,7 +14,7 @@ proxies:
   - {"name":zgo,"type":vless,"server":38.49.55.100,"port":26354,"uuid":1922e0c2-9641-427b-9dd4-1f104b4946e6,"tls":true,"publicKey":KfdO7tj1gxJAVDm0nMdeKkitgHzF0-bVy-ZcR1YN8DI,"shortId":fd506814,"security":reality,"sni":yahoo.com,"network":tcp}
   - {"name":lisa,"type":vless,"server":210.0.244.87,"port":19541,"uuid":eff0b6d6-e92c-4ddb-9b96-d53d55a7ba2d,"tls":true,"publicKey":3mDsUAPK79aLdwIP0mDvkhZpPgEI8y1GIxTt-9HjCH8,"shortId":7f9d8d3ab42dab,"security":reality,"sni":yahoo.com,"network":tcp}
   - {"name":a_1,"type":vless,"server":146.235.18.231,"port":32151,"uuid":7e41df33-bb33-43bf-be69-afc88c718b25,"tls":true,"publicKey":e1Z8me9hPTVxmYajYolVV4Ioith2dCBVLCuskw5_ZDU,"shortId":720267e9e32069b2,"security":reality,"sni":yahoo.com,"network":tcp}
-  - {"name":b_1,"type":vless,"server":146.235.19.252,"port":46094,"uuid":aa97b72c-60fb-441f-bea7-86c9122f9cd4,"tls":true,"publicKey":q1w4LCoVQOrE2007srUEdLQEbkcG3K_KXxbwyYToSn4,"shortId":46c0f69d96dccab1,"security":reality,"sni":yahoo.com,"network":tcp}
+  - {"name":b_1,"type":vless,"server":140.245.103.13,"port":46094,"uuid":aa97b72c-60fb-441f-bea7-86c9122f9cd4,"tls":true,"publicKey":q1w4LCoVQOrE2007srUEdLQEbkcG3K_KXxbwyYToSn4,"shortId":46c0f69d96dccab1,"security":reality,"sni":yahoo.com,"network":tcp}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
